@@ -1,0 +1,33 @@
+---
+layout: kml
+title: Kml file for older map icons
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+    <Style id="blueDot">
+      <IconStyle>
+        <Icon>
+          <href>http://labs.google.com/ridefinder/images/mm_20_blue.png
+          </href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+    {% for row in site.data.allGumLocsNoCounty.content_hash %}
+     <Placemark>
+    <name>{{row.display_name}}</name>
+    <styleUrl>#blueDot</styleUrl>
+    <description>
+      {{row.radius}}
+    </description>
+    <Point>
+      <coordinates>{{row.centroid_long}},{{row.centroid_lat}},0</coordinates>
+    </Point>
+  </Placemark>
+    {% endfor %}
+ 
+  </Document>
+</kml>
+
