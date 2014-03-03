@@ -1,4 +1,4 @@
 name: Locations map
 markdown: redcarpet
 pygments: true
-baseurl: /pages/fakeplasticpaul/locationsmap
+baseurl: /locationsmap
