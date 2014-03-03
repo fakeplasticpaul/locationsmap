@@ -11,13 +11,8 @@
 
 
 
-var ctaLayer2 = new google.maps.KmlLayer({
-    url: 'https://dl.dropboxusercontent.com/u/3798063/oldmap4.kml'
-  });
-  ctaLayer2.setMap(map);
-
   var ctaLayer = new google.maps.KmlLayer({
-    url: 'https://dl.dropboxusercontent.com/u/3798063/2013map9.kml'
+    url: 'https://dl.dropboxusercontent.com/u/3798063/2013map13.kml'
 });
 ctaLayer.setMap(map);
 
