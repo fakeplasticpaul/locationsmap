@@ -12,7 +12,7 @@
 
 
   var ctaLayer = new google.maps.KmlLayer({
-    url: 'https://dl.dropboxusercontent.com/u/3798063/2013map13.kml'
+    url: 'http://fakeplasticpaul.github.io/locationsmap/kml/map.kml'
 });
 ctaLayer.setMap(map);
 
